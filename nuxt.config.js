@@ -29,7 +29,9 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    "@nuxtjs/google-fonts"
+    "@nuxtjs/google-fonts",
+    '@nuxtjs/fontawesome',
+    
   ],
   googleFonts:{
     families: {
@@ -45,13 +47,20 @@ export default {
     exposeConfig: false,
     config: {}
   },
+  fontawesome:{
+    component: 'fa',
+    icons: {
+      solid:['faShoppingBasket', 'faBars']
+    }
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
