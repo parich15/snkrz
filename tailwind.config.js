@@ -1,17 +1,27 @@
 module.exports = {
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily:{
         sans: ["Raleway"],
-        body: ["Open Sans"]
-      }
+        body: ["Open Sans"],
+        especial:["Permanent Marker"],
+        brand:["Evogria"],
+        brand2:["Heavitas"]
+      },
+      backgroundImage: theme => ({
+        'imagen-inicio': "url('/img/InicioSnkrz.jpg')"
+      })
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      scale: ['group-hover']
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
   purge:{
     enabled: process.env.NODE_ENV === 'production',
     content:[

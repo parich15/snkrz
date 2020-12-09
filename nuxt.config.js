@@ -18,6 +18,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -36,7 +37,8 @@ export default {
   googleFonts:{
     families: {
       Raleway: true,
-      'Open+Sans': true
+      'Open+Sans': true,
+      'Permanent+Marker': true,
     },
     display: 'swap',
     prefetch: 'true'
@@ -50,7 +52,8 @@ export default {
   fontawesome:{
     component: 'fa',
     icons: {
-      solid:['faShoppingBasket', 'faBars']
+      solid:['faBars','faPhone','faPaperPlane'],
+      brands:['faWhatsapp']
     }
   },
 
@@ -65,7 +68,7 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
-
+ 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extend(config,ctx){

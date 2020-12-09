@@ -1,3 +1,31 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities"
+@tailwind base;
+@tailwind components;
+*::-webkit-scrollbar {
+    display: none;
+};
+*{
+    scrollbar-width: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Evogria';
+        src: url('../fonts/evogria-webfont.woff2') format('woff2'),
+             url('../fonts/evogria-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url('../fonts/heavitas-webfont.woff2') format('woff2'),
+         url('../fonts/heavitas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+}
