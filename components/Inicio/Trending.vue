@@ -8,8 +8,8 @@
           </h1>
           <div class="h-1 w-1/4 bg-green-500 rounded" />
         </div>
-        <p class="lg:w-1/2 w-full leading-relaxed text-base dark:text-green-500">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a faucibus enim. Donec varius ante vitae sollicitudin elementum. Lorem ipsum dolor sit amet.ed a faucibus enim. Donec varius ante vitae sollicitudin elementum. Lorem ipsum dolor sit amet.
+        <p class="lg:w-1/2 w-full leading-relaxed text-base md:dark:text-green-500 dark:text-gray-400 font-medium text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a faucibus enim. Donec varius ante vitae sollicitudin elementum. Lorem ipsum dolor sit amet.ed a faucibus enim.
         </p>
       </div>
       <div class="flex flex-wrap -m-4">

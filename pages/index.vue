@@ -3,21 +3,21 @@
     <hero />
     <presentacion />
     <trending />
-    <seccion-fixed />
+    <selector />
   </div>
 </template>
 
 <script>
 import Hero from '../components/Inicio/Hero.vue'
 import Presentacion from '../components/Inicio/Presentacion.vue'
-import SeccionFixed from '../components/Inicio/SeccionFixed.vue'
+import Selector from '../components/Inicio/Selector.vue'
 import Trending from '../components/Inicio/Trending.vue'
 export default {
   components: {
     Hero,
     Presentacion,
     Trending,
-    SeccionFixed
+    Selector
   }
 }
 </script>
