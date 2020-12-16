@@ -19,13 +19,13 @@
           <div class="rounded-lg h-64 overflow-hidden">
             <img alt="content" class="object-cover object-center h-full w-full" src="../../static/img/Promo1.jpg">
           </div>
-          <h2 class="dark:text-green-500 text-2xl font-medium title-font text-gray-700 mt-5">
+          <h2 class=" font-brand dark:text-green-500 text-2xl font-medium title-font text-gray-600 mt-5">
             Nike Lightning Edition
           </h2>
           <p class=" dark:text-gray-400 text-base leading-relaxed mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a faucibus enim. Donec varius ante vitae sollicitudin elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <a href="#" class="text-green-500 inline-flex items-center mt-3 transition duration-500 ease-out transform hover:text-green-700">
+          <a href="#" class="font-brand2 text-xs text-green-500 inline-flex items-center mt-3 transition duration-500 ease-out transform hover:text-green-700">
             Más información
             <svg
               fill="none"
@@ -44,13 +44,13 @@
           <div class="rounded-lg h-64 overflow-hidden">
             <img alt="content" class="object-cover object-center h-full w-full" src="../../static/img/Promo2.jpg">
           </div>
-          <h2 class="dark:text-green-500 text-2xl font-medium title-font text-gray-700 mt-5">
+          <h2 class=" font-brand dark:text-green-500 text-2xl font-medium title-font text-gray-600 mt-5">
             Jordan Le-Bronx
           </h2>
           <p class=" dark:text-gray-400 text-base leading-relaxed mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a faucibus enim. Donec varius ante vitae sollicitudin elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <a href="#" class="text-green-500 inline-flex items-center mt-3 transition duration-500 ease-out transform hover:text-green-700">Más información
+          <a href="#" class=" font-brand2 text-xs text-green-500 inline-flex items-center mt-3 transition duration-500 ease-out transform hover:text-green-700">Más información
             <svg
               fill="none"
               stroke="currentColor"
@@ -68,13 +68,13 @@
           <div class="rounded-lg h-64 overflow-hidden">
             <img alt="content" class="object-cover object-center h-full w-full" src="../../static/img/Promo3.jpg">
           </div>
-          <h2 class="dark:text-green-500 text-2xl font-medium title-font text-gray-700 mt-5">
+          <h2 class=" font-brand dark:text-green-500 text-2xl font-medium title-font text-gray-600 mt-5">
             Nike Covid-19 Especial
           </h2>
           <p class=" dark:text-gray-400 text-base leading-relaxed mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a faucibus enim. Donec varius ante vitae sollicitudin elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <a href="#" class="text-green-500 inline-flex items-center mt-3 transition duration-500 ease-out transform hover:text-green-700">Más información
+          <a href="#" class=" font-brand2 text-xs text-green-500 inline-flex items-center mt-3 transition duration-500 ease-out transform hover:text-green-700">Más información
             <svg
               fill="none"
               stroke="currentColor"

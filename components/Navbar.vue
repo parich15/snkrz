@@ -4,8 +4,10 @@
     <header class="bg-gray-100 z-50 sm:flex sm:justify-between sm:items-center dark:bg-gray-800">
       <div class=" flex justify-between items-center px-4 py-1">
         <div class="logo">
-          <img v-if="!oscuro" src="../static/img/Logo.png" class=" h-20 md:h-24 lg:h-28 w-auto object-cover " alt="Logo Snkrz Garden" srcset="">
-          <img v-if="oscuro" src="../static/img/LogoDark.png" class=" h-20 md:h-24 lg:h-28 w-auto object-cover " alt="Logo Snkrz Garden" srcset="">
+          <NuxtLink to="/">
+            <img v-if="!oscuro" src="../static/img/Logo.png" class=" h-20 md:h-24 lg:h-28 w-auto object-cover " alt="Logo Snkrz Garden" srcset="">
+            <img v-if="oscuro" src="../static/img/LogoDark.png" class=" h-20 md:h-24 lg:h-28 w-auto object-cover " alt="Logo Snkrz Garden" srcset="">
+          </NuxtLink>
         </div>
         <div class="my-auto flex">
           <button type="button" class="block text-dark focus:outline-none sm:hidden" @click="abierto = !abierto">
@@ -42,8 +44,12 @@
         >
           <div :class="abierto ? 'block' : 'hidden'" class="sm:flex sm:px-1">
             <div class="px-12 pt-1 lg:pt-0 pb-4 sm:flex sm:px-1 sm:pb-0">
-              <a href="#" class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">Catálogo</a>
-              <a href="#" class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">Sobre Nosotros</a>
+              <NuxtLink to="/Catalogo" class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">
+                Catálogo
+              </NuxtLink>
+              <NuxtLink to="/SobreNosotros" class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">
+                Sobre Nosotros
+              </NuxtLink>
               <a href="#" class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">Contacto</a>
             </div>
             <div class="flex justify-around items-center w-full sm:hidden lg:flex sm:w-auto">
