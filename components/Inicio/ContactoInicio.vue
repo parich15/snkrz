@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-        <h2 class="text-lg mb-1 font-medium title-font font-brand lg:text-4xl text-gray-400">
+        <h2 class="text-2xl mb-1 font-medium title-font font-brand lg:text-4xl text-gray-400">
           Ponte en Contacto
         </h2>
         <div class="h-1 bg-gray-200 rounded overflow-hidden dark:bg-gray-900">

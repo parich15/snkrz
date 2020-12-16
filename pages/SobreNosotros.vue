@@ -1,5 +1,15 @@
 <template>
-  <div />
+  <div>
+    <section>
+      <div class="portada relative container mx-auto">
+        <div class="relative overflow-hidden w-full">
+          <div>
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

@@ -13,12 +13,12 @@
       >
       <div class="carousel-item absolute opacity-0" style="height:50vh;">
         <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" style="background-image: url('https://images.unsplash.com/photo-1552346154-21d32810aba3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
-          <div class="container mx-auto">
-            <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+          <div class="container mx-auto flex justify-center items-center md:block">
+            <div class="flex flex-col w-10/12 text-center lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
               <p class="font-brand text-3xl text-gray-200 mb-4">
                 Stripy Zig Zag Jigsaw Pillow and Duvet Set
               </p>
-              <a class="boton-carousel" href="#">view product</a>
+              <a class="boton-carousel" href="#">Ver Sneaker</a>
             </div>
           </div>
         </div>
@@ -37,12 +37,12 @@
       >
       <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:50vh;">
         <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" style="background-image: url('https://images.unsplash.com/photo-1577655197245-99704192f4b5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');">
-          <div class="container mx-auto">
-            <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+          <div class="container mx-auto flex justify-center items-center md:block">
+            <div class="flex flex-col w-10/12 text-center lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
               <p class="font-brand text-3xl text-gray-200 mb-4">
                 Real Bamboo Wall Clock
               </p>
-              <a class="boton-carousel" href="#">view product</a>
+              <a class="boton-carousel" href="#">Ver Sneaker</a>
             </div>
           </div>
         </div>
@@ -61,12 +61,12 @@
       >
       <div class="carousel-item absolute opacity-0" style="height:50vh;">
         <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1579199265916-436a773ce30b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');">
-          <div class="container mx-auto">
-            <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+          <div class="container mx-auto flex justify-center items-center md:block">
+            <div class="flex flex-col w-10/12 text-center lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
               <p class="font-brand text-3xl text-gray-200 mb-4">
                 Brown and blue hardbound book
               </p>
-              <a class="boton-carousel" href="#">view product</a>
+              <a class="boton-carousel" href="#">Ver Sneaker</a>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@
       <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
         <nav id="store" class="w-full z-30 top-0 px-6 py-1">
           <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
-            <a class=" font-brand text-5xl tracking-widest text-gray-400" href="#">
+            <a class=" font-brand text-2xl md:text-5xl tracking-widest text-gray-400" href="#">
               CATÁLOGO
             </a>
             <div id="store-nav-content" class="flex items-center">
@@ -109,7 +109,7 @@
               </a>
             </div>
           </div>
-          <hr class="ml-2 h-2 bg-green-600 w-1/6 block">
+          <hr class="hidden md:block ml-2 h-2 bg-green-600 w-1/6 ">
         </nav>
 
         <div v-for="i in productos" :key="i" class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
