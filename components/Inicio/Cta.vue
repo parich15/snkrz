@@ -1,11 +1,11 @@
 <template>
-  <section class="text-gray-700 body-font">
+  <section class="text-gray-700 body-font dark:bg-gray-800">
     <div class="container px-8 py-24 mx-auto flex flex-wrap">
-      <h2 class="text-2xl sm:text-3xl font-medium title-font font-brand mb-2 md:w-2/5 text-shadow-md ">
+      <h2 class="text-2xl sm:text-3xl font-medium title-font font-brand mb-2 md:w-2/5 text-shadow-md dark:text-green-500 ">
         Mantente informado!<br>nuevo stock cada día
       </h2>
       <div class="md:w-3/5 md:pl-6">
-        <p class="leading-relaxed text-xl font-body font-semibold">
+        <p class="leading-relaxed text-xl font-body font-semibold dark:text-gray-500">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim natus inventore perspiciatis officia quos aliquid sequi corporis a facilis ut.
         </p>
         <div class="flex md:mt-4 mt-6 sm:flex-row flex-col items-center sm:items-start">

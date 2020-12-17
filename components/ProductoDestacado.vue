@@ -6,15 +6,15 @@
         <img class="hidden lg:block" src="https://via.placeholder.com/200" alt="">
       </div>
       <div>
-        <h3 class=" text-center font-brand text-base text-gray-700 my-3 lg:mt-3 lg:text-2xl">
+        <h3 class=" text-center font-brand text-base text-gray-700 my-3 lg:mt-3 lg:text-2xl dark:text-gray-400">
           {{ titulo }}
         </h3>
-        <p class="text-center font-body text-gray-800 text-sm mb-4 lg:text-xl lg:font-bold">
+        <p class="text-center font-body text-gray-800 text-sm mb-4 lg:text-xl lg:font-bold dark:text-gray-500">
           {{ desc }}
         </p>
       </div>
       <div>
-        <h5 class=" text-center font-body text-sm  text-green-700 font-bold">
+        <h5 class=" text-center font-body text-sm  text-green-700 font-bold dark:text-green-500">
           Rating: {{ rating }} / 5
         </h5>
       </div>
