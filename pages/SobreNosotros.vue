@@ -6,7 +6,7 @@
           <div class="h-full object-cover">
             <img src="../static/img/PortadaSobreNosotros.jpg" alt="Sobre Nosotros - Snkrz Garden" class="object-cover h-full">
             <div class="absolute inset-x-0 top-48 h-auto text-center">
-              <h1 class=" font-brand text-7xl text-green-700 pointer-events-none">
+              <h1 class=" font-brand text-7xl text-green-600 pointer-events-none">
                 SNKRZ GARDEN
               </h1>
             </div>
