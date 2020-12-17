@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-      <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 dark:bg-gray-800">
+      <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto md:mr-20 w-full md:py-8 mt-8 md:mt-0 dark:bg-gray-800">
         <h2 class="text-2xl mb-1 font-medium title-font font-brand lg:text-4xl text-gray-400">
           Ponte en Contacto
         </h2>
@@ -48,15 +48,15 @@
         </p>
         <div class="relative mb-4">
           <label for="name" class="leading-7 text-sm text-gray-600 dark:text-green-500 font-bold font-brand2">Nombre</label>
-          <input id="name" type="text" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <input id="name" type="text" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out dark:bg-gray-900 dark:border-gray-700">
         </div>
         <div class="relative mb-4">
           <label for="email" class="leading-7 text-sm text-gray-600 dark:text-green-500 font-bold font-brand2">Email</label>
-          <input id="email" type="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <input id="email" type="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out dark:bg-gray-900 dark:border-gray-700">
         </div>
         <div class="relative mb-4">
           <label for="message" class="leading-7 text-sm text-gray-600 dark:text-green-500 font-bold font-brand2">Mensaje</label>
-          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
+          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out dark:bg-gray-900 dark:border-gray-700" />
         </div>
         <button class="text-white bg-green-500 border-0 ease-in duration-200 transform hover:scale-105 transition py-2 px-6 focus:outline-none hover:bg-green-700 rounded text-lg">
           Enviar Solicitud
