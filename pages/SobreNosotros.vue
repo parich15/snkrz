@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <div class="portada relative container mx-auto">
+      <div class="portada relative mx-auto">
         <div class="relative overflow-hidden w-full h-screen lg:h-auto ">
           <div class="h-full object-cover">
             <img src="../static/img/PortadaSobreNosotros.jpg" alt="Sobre Nosotros - Snkrz Garden" class="object-cover h-full">
@@ -20,7 +20,7 @@
           <h1 class="sm:text-4xl font-brand text-2xl font-medium title-font text-gray-600 mb-4 dark:text-gray-500">
             The Sneakers Paradise
           </h1>
-          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto font-brand2 text-gray-500 dark:text-gray-400">
+          <p class="md:text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto font-brand2 text-gray-500 dark:text-gray-400 text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam earum eaque explicabo asperiores, pariatur nostrum, quam obcaecati sunt facere esse voluptates alias iure praesentium qui, totam dolor incidunt animi vel!
           </p>
           <div class="flex mt-6 justify-center">
@@ -75,7 +75,7 @@
       </div>
     </section>
     <section class="text-gray-700 body-font dark:bg-gray-800">
-      <div class="text-center text-4xl font-brand2 text-green-700 text-shadow-md dark:text-green-500">
+      <div class="text-center text-3xl md:text-4xl font-brand2 text-green-700 text-shadow-md dark:text-green-500">
         <h3>
           ¿Quienes Somos?
         </h3>
@@ -83,7 +83,7 @@
       <div class="container px-5  py-16 mx-auto flex flex-wrap">
         <div class="flex flex-wrap -m-4">
           <div class="p-4 lg:w-1/2 md:w-full">
-            <div class="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col dark:border-green-500">
+            <div class="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col items-center dark:border-green-500">
               <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-green-50 text-green-500 flex-shrink-0">
                 <svg
                   fill="none"
@@ -98,18 +98,18 @@
                   <circle cx="12" cy="7" r="4" />
                 </svg>
               </div>
-              <div class="flex-grow">
-                <h2 class="text-gray-600 text-lg title-font font-medium mb-3 font-brand2 tracking-wide dark:text-green-500 ">
+              <div class="flex-grow ">
+                <h2 class="text-gray-600 text-lg title-font font-medium mb-3 font-brand2 tracking-wide dark:text-green-500 text-center md:text-left ">
                   Oscar Paricio
                 </h2>
-                <p class="leading-relaxed text-base dark:text-gray-300">
+                <p class="leading-relaxed text-base dark:text-gray-300 text-justify md:text-left">
                   Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
                 </p>
               </div>
             </div>
           </div>
           <div class="p-4 lg:w-1/2 md:w-full">
-            <div class="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col dark:border-green-500">
+            <div class="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col items-center  dark:border-green-500">
               <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-green-50 text-green-500 flex-shrink-0">
                 <svg
                   fill="none"
@@ -125,10 +125,10 @@
                 </svg>
               </div>
               <div class="flex-grow">
-                <h2 class="text-gray-600 text-lg title-font font-medium mb-3 font-brand2 tracking-wide dark:text-green-500 ">
+                <h2 class="text-gray-600 text-lg title-font font-medium mb-3 font-brand2 tracking-wide dark:text-green-500  text-center md:text-left ">
                   Marc Ceprian
                 </h2>
-                <p class="leading-relaxed text-base dark:text-gray-300">
+                <p class="leading-relaxed text-base dark:text-gray-300 text-justify md:text-left">
                   Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
                 </p>
               </div>
