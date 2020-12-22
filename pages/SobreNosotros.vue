@@ -100,7 +100,7 @@
               </div>
               <div class="flex-grow ">
                 <h2 class="text-gray-600 text-lg title-font font-medium mb-3 font-brand2 tracking-wide dark:text-green-500 text-center md:text-left ">
-                  Oscar Paricio
+                  Nikos Sneaker
                 </h2>
                 <p class="leading-relaxed text-base dark:text-gray-300 text-justify md:text-left">
                   Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
@@ -126,7 +126,7 @@
               </div>
               <div class="flex-grow">
                 <h2 class="text-gray-600 text-lg title-font font-medium mb-3 font-brand2 tracking-wide dark:text-green-500  text-center md:text-left ">
-                  Marc Ceprian
+                  Ericzon Sola
                 </h2>
                 <p class="leading-relaxed text-base dark:text-gray-300 text-justify md:text-left">
                   Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.

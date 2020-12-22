@@ -52,7 +52,7 @@ export default {
   fontawesome:{
     component: 'fa',
     icons: {
-      solid:['faBars','faPhone','faPaperPlane'],
+      solid:['faBars','faPhone','faPaperPlane', 'faAt'],
       brands:['faWhatsapp']
     }
   },

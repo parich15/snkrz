@@ -21,7 +21,7 @@
               viewBox="0 0 512 512"
               style="enable-background:new 0 0 512 512;"
               xml:space="preserve"
-              class="h-8 w-8"
+              class="h-8 w-8 "
             >
               <path v-if="abierto" style="fill:#07420c;transform:translateX(10%);transform:translateY(10%)" d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0" />
               <path v-if="!abierto" style="fill:#07420c;" d="M479.18,91.897H32.821C14.69,91.897,0,77.207,0,59.077s14.69-32.821,32.821-32.821H479.18   c18.13,0,32.82,14.69,32.82,32.821S497.31,91.897,479.18,91.897z" />
@@ -50,7 +50,9 @@
               <NuxtLink to="/SobreNosotros" class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">
                 Sobre Nosotros
               </NuxtLink>
-              <a href="#" class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">Contacto</a>
+              <NuxtLink to="/Contacto" class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">
+                Contacto
+              </NuxtLink>
             </div>
             <div class="flex justify-around items-center w-full sm:hidden lg:flex sm:w-auto">
               <div class="my-2 md:my-0 text-center font-brand text-gray-600 border-r border-gray-400 w-1/2">
