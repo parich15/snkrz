@@ -1,7 +1,7 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'snkrz',
+    title: 'Snkrz Garden | Home of the Sneaker',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -11,14 +11,18 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  target: 'static',
+  target: 'server',
+  env: {
+    storeUrl: 'http://178.62.58.172/'
+  },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    'aos/dist/aos.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    
+    {src: '~/plugins/aos.js', mode: 'client'}
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -63,9 +67,20 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    
+    '@nuxtjs/apollo',
+    '@nuxtjs/strapi'
   ],
-
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'http://178.62.58.172/graphql'
+      }
+    }
+  },
+  strapi:{
+    entities:['Snkrzs', 'Usuarios'],
+    url: process.env.API_URL || "http://178.62.58.172/",
+  },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
  

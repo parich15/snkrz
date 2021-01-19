@@ -5,8 +5,7 @@
       <div class=" flex justify-between items-center px-4 py-1">
         <div class="logo">
           <NuxtLink to="/">
-            <img v-if="!oscuro" src="../static/img/Logo.png" class=" h-20 md:h-24 lg:h-28 w-auto object-cover " alt="Logo Snkrz Garden" srcset="">
-            <img v-if="oscuro" src="../static/img/LogoDark.png" class=" h-20 md:h-24 lg:h-28 w-auto object-cover " alt="Logo Snkrz Garden" srcset="">
+            <img src="../static/img/Logo.png" class=" h-16 md:h-24 lg:h-28 w-auto object-cover " alt="Logo Snkrz Garden" srcset="">
           </NuxtLink>
         </div>
         <div class="my-auto flex">
@@ -21,7 +20,7 @@
               viewBox="0 0 512 512"
               style="enable-background:new 0 0 512 512;"
               xml:space="preserve"
-              class="h-8 w-8 "
+              class="w-7 "
             >
               <path v-if="abierto" style="fill:#07420c;transform:translateX(10%);transform:translateY(10%)" d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0" />
               <path v-if="!abierto" style="fill:#07420c;" d="M479.18,91.897H32.821C14.69,91.897,0,77.207,0,59.077s14.69-32.821,32.821-32.821H479.18   c18.13,0,32.82,14.69,32.82,32.821S497.31,91.897,479.18,91.897z" />
@@ -55,11 +54,8 @@
               </NuxtLink>
             </div>
             <div class="flex justify-around items-center w-full sm:hidden lg:flex sm:w-auto">
-              <div class="my-2 md:my-0 text-center font-brand text-gray-600 border-r border-gray-400 w-1/2">
+              <div class="my-2 md:my-0 text-center font-brand text-gray-600 w-full">
                 <a href="#" class=" transition  dark:hover:text-gray-300 dark:hover:bg-gray-700 lg:text-xl duration-300 ease-in mx-8 lg:mx-2 lg:px-5 py-1 block rounded hover:bg-gray-200">Login</a>
-              </div>
-              <div class="my-2 md:my-0 text-center font-brand text-gray-600 w-1/2 lg:w-full">
-                <a href="#" class=" transition  dark:hover:text-gray-300 dark:hover:bg-gray-700 lg:text-xl duration-300 ease-in mx-8 lg:mx-2 lg:px-5 py-1 block hover:bg-gray-200 rounded">Noticias</a>
               </div>
             </div>
             <div class=" flex w-full justify-center items-center py-6 sm:hidden">

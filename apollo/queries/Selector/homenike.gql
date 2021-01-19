@@ -1,0 +1,10 @@
+query homeNike{
+  homeNikes{
+    id
+    Titulo
+    Descripcion
+    Imagen{
+      url
+    }
+  }
+}

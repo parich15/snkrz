@@ -1,0 +1,18 @@
+query Snkrz {
+  snkrzs {
+    id
+    Titulo
+    Precio
+    Stock
+    Imagen{
+      url
+    }
+    Tallas{
+      Talla
+      Disponible
+    }
+    Marca {
+      Marca
+    }
+  }
+}

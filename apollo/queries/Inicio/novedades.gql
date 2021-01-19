@@ -1,0 +1,11 @@
+query Novedades {
+  novedades {
+    id
+    Imagen{
+      url
+    }
+    Titulo
+    Texto
+    Enlace
+  }
+}

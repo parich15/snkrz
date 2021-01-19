@@ -1,5 +1,5 @@
 <template>
-  <div id="inicio" class="overflow-hidden">
+  <div id="inicio" class="overflow-hidden dark:bg-gray-800">
     <hero />
     <presentacion />
     <trending />

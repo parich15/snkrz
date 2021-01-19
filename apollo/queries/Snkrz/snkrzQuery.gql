@@ -1,0 +1,19 @@
+query Snkrz($id: ID!) {
+  snkrz(id: $id) {
+    id
+    Titulo
+    Descripcion
+    Precio
+    Imagen{
+      url
+    }
+    Stock
+    Tallas{
+      Disponible
+      Talla
+    }
+     Marca {
+      Marca
+    }
+    }
+}

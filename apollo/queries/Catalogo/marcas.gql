@@ -1,0 +1,5 @@
+query Marcas {
+  marcas {
+    Marca
+  }
+}

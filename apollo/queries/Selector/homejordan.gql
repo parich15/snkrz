@@ -1,0 +1,10 @@
+query homeJordan{
+  homeJordans{
+    id
+    Titulo
+    Imagen{
+      url
+    }
+    Descripcion
+  }
+}

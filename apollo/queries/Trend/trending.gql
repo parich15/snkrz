@@ -1,0 +1,10 @@
+query Trending {
+  trendings{
+    id
+    Titulo
+    Imagen {
+      url
+    }
+    Descripcion
+  }
+}

@@ -30,7 +30,7 @@
           <h3 class=" font-brand text-3xl text-shadow-sm text-green-700 dark:text-green-500">
             Contacta con nosotros
           </h3>
-          <hr class=" border-gray-300 w-1/3 border-2 my-2 dark:border-gray-600">
+          <hr class=" border-gray-300 w-1/3 border-2 my-2 bg-gray-300 dark:border-gray-600">
           <h5 class=" font-brand2 text-sm text-gray-400 dark:text-gray-500">
             Snkrz Garden - Barcelona
           </h5>
@@ -94,15 +94,15 @@
             </div>
           </div>
           <div class=" py-4">
-            <p class=" py-2 my-2 bg-green-200 text-gray-600 rounded-md pl-4 font-brand2 text-sm dark:bg-green-500">
+            <p class=" py-2 my-2 bg-green-400 text-gray-100 rounded-md pl-4 font-brand2 text-sm dark:bg-green-500">
               <fa class=" text-green-700 dark:text-green-900" icon="paper-plane" />
               Carrer dels Assaonadors, 7
             </p>
-            <p class=" py-2 my-2 bg-green-200 text-gray-600 rounded-md pl-4 font-brand2 text-sm dark:bg-green-500">
+            <p class=" py-2 my-2 bg-green-400 text-gray-100 rounded-md pl-4 font-brand2 text-sm dark:bg-green-500">
               <fa class=" text-green-700 dark:text-green-900" icon="phone" />
               93 420 69 23 | 606 90 33 10
             </p>
-            <p class=" py-2 my-2 bg-green-200 text-gray-600 rounded-md pl-4 font-brand2 text-sm dark:bg-green-500">
+            <p class=" py-2 my-2 bg-green-400 text-gray-100 rounded-md pl-4 font-brand2 text-sm dark:bg-green-500">
               <fa class=" text-green-700 dark:text-green-900" icon="at" />
               snkrzgarden@jordan.com
             </p>

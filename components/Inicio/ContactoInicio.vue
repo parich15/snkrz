@@ -1,6 +1,6 @@
 <template>
-  <section class="text-gray-700 body-font relative px-4 dark:bg-gray-800">
-    <div class="container px-5 py-24 mx-auto flex sm:flex-no-wrap flex-wrap">
+  <section class="text-gray-700 body-font relative px-4 dark:bg-gray-800" data-aos="fade-up">
+    <div class=" px-5 py-24 mx-auto flex sm:flex-no-wrap ">
       <div class="bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative lg:w1/2">
         <iframe
           class="absolute inset-0"

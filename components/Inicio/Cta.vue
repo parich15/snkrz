@@ -1,5 +1,5 @@
 <template>
-  <section class="text-gray-700 body-font dark:bg-gray-800">
+  <section class="text-gray-700 body-font dark:bg-gray-800" data-aos="fade-in">
     <div class="container px-8 py-24 mx-auto flex flex-wrap">
       <h2 class="text-2xl sm:text-3xl font-medium title-font font-brand mb-2 md:w-2/5 text-shadow-md dark:text-green-500 ">
         Mantente informado!<br>nuevo stock cada día

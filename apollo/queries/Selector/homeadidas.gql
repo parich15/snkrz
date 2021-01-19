@@ -1,0 +1,10 @@
+query homeAdidas{
+  homeAdidas{
+    id
+    Titulo
+    Imagen{
+      url
+    }
+    Descripcion
+  }
+}
