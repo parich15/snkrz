@@ -113,7 +113,7 @@
           </nav>
 
           <div v-for="snkrz in snkrzs" :key="snkrz.id" class="2xl:p-7 flex flex-col md:w-1/3 p-6 w-full xl:w-1/4">
-            <NuxtLink :to="{name:'Catalogo-id', params: { id: snkrz.id }}" replace>
+            <NuxtLink :to="{name:'Catalogo-id', params: { id: snkrz.id }}">
               <img class="2xl:w-full h-56 hover:grow hover:shadow-lg md:w-96 object-cover rounded-lg w-full" :src="'http://178.62.58.172' + snkrz.Imagen.url">
               <div class="pt-3 flex items-center justify-between">
                 <p class=" dark:text-gray-400 font-brand md:text-xl text-3xl text-gray-600">
@@ -125,20 +125,8 @@
                   Disponible
                 </p>
                 <div class="flex w-full justify-between items-center 2xl:w-full">
-                  <div class=" w-1/2">
-                    <ul class="flex">
-                      <li v-for="tallas in snkrz.Tallas" :key="tallas.id">
-                        <p v-if="tallas.Disponible === true" class="bg-green-600 font-bold font-body   px-1 rounded-2xl text-white mr-2.5">
-                          {{ tallas.Talla }}
-                        </p>
-                        <p v-else class="bg-gray-500 font-bold font-body px-1 rounded-2xl text-white mr-2.5">
-                          {{ tallas.Talla }}
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class=" w-1/2">
-                    <p class=" font-brand text-3xl md:text-2xl text-green-500 text-right 2xl:text-3xl">
+                  <div class=" w-full">
+                    <p class=" font-brand text-3xl md:text-2xl text-green-500 text-left 2xl:text-3xl">
                       {{ snkrz.Precio }} €
                     </p>
                   </div>

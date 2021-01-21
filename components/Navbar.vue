@@ -43,7 +43,7 @@
         >
           <div :class="abierto ? 'block' : 'hidden'" class="sm:flex sm:px-1">
             <div class="px-12 pt-1 lg:pt-0 pb-4 sm:flex sm:px-1 sm:pb-0">
-              <NuxtLink to="/Catalogo" class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">
+              <NuxtLink to="/Catalogo" replace class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">
                 Catálogo
               </NuxtLink>
               <NuxtLink to="/SobreNosotros" class="dark:text-green-500 dark:hover:bg-gray-600   transition duration-300 ease-in block sm:px-3 text-green-800 font-brand rounded hover:bg-gray-200 font-semibold text-xl text-center py-3">
