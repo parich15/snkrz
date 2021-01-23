@@ -1,0 +1,9 @@
+query Carrousel {
+  carrousels{
+    Titulo
+    Imagen{
+      url
+    }
+    NumId
+  }
+}

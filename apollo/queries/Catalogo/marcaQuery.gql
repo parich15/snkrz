@@ -1,5 +1,6 @@
-query Marcas {
+query Marca {
   marcas {
+    id
     Marca
   }
 }

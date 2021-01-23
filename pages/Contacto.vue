@@ -73,24 +73,68 @@
               Envíanos tu solicitud de contacto
             </h5>
             <div class="lg:w-1/3 md:w-1/2 bg-white dark:bg-gray-800 flex flex-col md:ml-auto w-full md:py-8 mt-4 md:mt-0">
-              <div class="relative mb-4">
-                <label for="name" class="leading-7 text-sm text-gray-400 font-brand2">Nombre</label>
-                <input id="name" type="text" name="name" class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-              </div>
-              <div class="relative mb-4">
-                <label for="email" class="leading-7 text-sm text-gray-400 font-brand2">Email</label>
-                <input id="email" type="email" name="email" class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-              </div>
-              <div class="relative mb-4">
-                <label for="message" class="leading-7 text-sm text-gray-400 font-brand2">Tu Mensaje</label>
-                <textarea id="message" name="message" class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
-              </div>
-              <button class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg font-brand">
-                Enviar Solicitud
-              </button>
-              <p class="text-xs text-gray-500 mt-3">
-                Snkrz Garden, todos los derechos reservados.
-              </p>
+              <form @submit.prevent="enviarMensaje">
+                <div class="relative mb-4">
+                  <label for="name" class="leading-7 text-sm text-gray-400 font-brand2">Nombre</label>
+                  <input
+                    id="name"
+                    v-model="Nombre"
+                    required
+                    type="text"
+                    name="name"
+                    class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  >
+                </div>
+                <div class="relative mb-4">
+                  <label for="email" class="leading-7 text-sm text-gray-400 font-brand2">Email</label>
+                  <input
+                    id="email"
+                    v-model="Email"
+                    required
+                    type="email"
+                    name="email"
+                    class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  >
+                </div>
+                <div class="relative mb-4">
+                  <label for="tel" class="leading-7 text-sm text-gray-400 font-brand2">Telefono</label>
+                  <input
+                    id="tel"
+                    v-model="Telefono"
+                    required
+                    type="number"
+                    name="tel"
+                    class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  >
+                </div>
+                <div class="relative mb-4">
+                  <label for="message" class="leading-7 text-sm text-gray-400 font-brand2">Tu Mensaje</label>
+                  <textarea id="message" v-model="Mensaje" name="message" class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
+                </div>
+                <div v-if="correcto">
+                  <p>
+                    Genial! Tu mensaje se ha enviado correctamente.<br>
+                    Pronto nos pondremos en contacto contigo.
+                  </p>
+                </div>
+                <div v-else>
+                  <button class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg font-brand">
+                    {{ cargando ? "Enviando..." : 'Enviar Solicitud' }}
+                  </button>
+                  <div v-if="errores" class="my-3">
+                    Algo ha ido mal; has rellenado correctamente los campos?
+                  </div>
+                  <div
+                    v-if="cargando"
+                    class="NotificacionCarga rounded bg-orange-500 text-white text-lg p-4"
+                  >
+                    Si tarda mucho en cargar, recarga la página o ponte en contacto a través de Whatsapp.
+                  </div>
+                  <p class="text-xs text-gray-500 mt-3">
+                    Snkrz Garden, todos los derechos reservados.
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
           <div class=" py-4">
@@ -108,25 +152,69 @@
             </p>
           </div>
         </div>
-        <div class=" hidden w-1/2 md:block px-6">
-          <div class="relative mb-4">
-            <label for="name" class="leading-7 text-sm text-gray-400 font-brand2">Nombre</label>
-            <input id="name" type="text" name="name" class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-          </div>
-          <div class="relative mb-4">
-            <label for="email" class="leading-7 text-sm text-gray-400 font-brand2">Email</label>
-            <input id="email" type="email" name="email" class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-          </div>
-          <div class="relative mb-4">
-            <label for="message" class="leading-7 text-sm text-gray-400 font-brand2">Tu Mensaje</label>
-            <textarea id="message" name="message" class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
-          </div>
-          <button class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg font-brand">
-            Enviar Solicitud
-          </button>
-          <p class="text-xs text-gray-500 mt-3">
-            Snkrz Garden, todos los derechos reservados.
-          </p>
+        <div class="hidden w-1/2 md:block px-6">
+          <form @submit.prevent="enviarMensaje">
+            <div class="relative mb-4">
+              <label for="name" class="leading-7 text-sm text-gray-400 font-brand2">Nombre</label>
+              <input
+                id="name"
+                v-model="Nombre"
+                required
+                type="text"
+                name="name"
+                class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              >
+            </div>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-400 font-brand2">Email</label>
+              <input
+                id="email"
+                v-model="Email"
+                required
+                type="email"
+                name="email"
+                class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              >
+            </div>
+            <div class="relative mb-4">
+              <label for="tel" class="leading-7 text-sm text-gray-400 font-brand2">Telefono</label>
+              <input
+                id="tel"
+                v-model="Telefono"
+                required
+                type="number"
+                name="Tel"
+                class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              >
+            </div>
+            <div class="relative mb-4">
+              <label for="message" class="leading-7 text-sm text-gray-400 font-brand2">Tu Mensaje</label>
+              <textarea id="message" v-model="Mensaje" name="message" class="w-full bg-white dark:bg-gray-900  dark:border-gray-700 dark:focus:border-green-500 rounded border border-gray-300 focus:border-green-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
+            </div>
+            <div v-if="correcto">
+              <p>
+                Genial! Tu mensaje se ha enviado correctamente.<br>
+                Pronto nos pondremos en contacto contigo.
+              </p>
+            </div>
+            <div v-else>
+              <button type="submit" class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg font-brand">
+                {{ cargando ? "Enviando..." : "Enviar Solicitud" }}
+              </button>
+              <div v-if="errores" class="my-3">
+                Algo ha ido mal; has rellenado correctamente los campos?
+              </div>
+              <div
+                v-if="cargando"
+                class="NotificacionCarga rounded bg-orange-500 text-white text-lg p-4"
+              >
+                Si tarda mucho en cargar, recarga la página o ponte en contacto a través de Whatsapp.
+              </div>
+              <p class="text-xs text-gray-500 mt-3">
+                Snkrz Garden, todos los derechos reservados.
+              </p>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -135,10 +223,67 @@
 
 <script>
 export default {
-  name: 'Contacto'
+  name: 'Contacto',
+  data () {
+    return {
+      Nombre: '',
+      Email: '',
+      Telefono: '',
+      Mensaje: '',
+      cargando: false,
+      correcto: false,
+      errores: false
+    }
+  },
+  methods: {
+    enviarMensaje () {
+      this.cargando = true
+      this.$axios
+        .post('http://178.62.58.172/Formularios', {
+          Nombre: this.Nombre,
+          Email: this.Email,
+          Telefono: this.Telefono,
+          Mensaje: this.Mensaje
+        })
+        .then(() => {
+          this.correcto = true
+          this.errores = false
+        })
+        .catch(() => {
+          this.errores = true
+        })
+        .finally(() => {
+          this.cargando = false
+          this.Nombre = ''
+          this.Email = ''
+          this.Telefono = ''
+          this.Mensaje = ''
+        })
+    }
+  }
+
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.NotificacionCarga{
+    animation: 5s appear;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
 
+}
 </style>

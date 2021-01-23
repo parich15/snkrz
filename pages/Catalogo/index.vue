@@ -13,13 +13,17 @@
           checked="checked"
         >
         <div class="carousel-item absolute opacity-0" style="height:50vh;">
-          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" style="background-image: url('https://images.unsplash.com/photo-1552346154-21d32810aba3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" :style="{backgroundImage: 'url(http://178.62.58.172' + carrousels[0].Imagen.url + ')'}">
             <div class="container mx-auto flex justify-center items-center md:block">
               <div class="flex flex-col w-10/12 text-center lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
                 <p class="font-brand text-3xl text-gray-200 mb-4">
-                  Nike Air Force Especial Edition
+                  {{ carrousels[0].Titulo }}
                 </p>
-                <a class="boton-carousel" href="#">Ver Sneaker</a>
+                <NuxtLink :to="{path:`/Catalogo/${carrousels[0].NumId}`}">
+                  <p class="boton-carousel">
+                    Ver Sneaker
+                  </p>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -37,13 +41,17 @@
           hidden=""
         >
         <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:50vh;">
-          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" style="background-image: url('https://images.unsplash.com/photo-1577655197245-99704192f4b5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');">
+          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" :style="{backgroundImage: 'url(http://178.62.58.172' + carrousels[1].Imagen.url + ')'}">
             <div class="container mx-auto flex justify-center items-center md:block">
               <div class="flex flex-col w-10/12 text-center lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
                 <p class="font-brand text-3xl text-gray-200 mb-4">
-                  Jordan Pro Fractal X
+                  {{ carrousels[1].Titulo }}
                 </p>
-                <a class="boton-carousel" href="#">Ver Sneaker</a>
+                <NuxtLink :to="{path:`/Catalogo/${carrousels[1].NumId}`}">
+                  <p class="boton-carousel">
+                    Ver Sneaker
+                  </p>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -61,13 +69,17 @@
           hidden=""
         >
         <div class="carousel-item absolute opacity-0" style="height:50vh;">
-          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1579199265916-436a773ce30b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');">
+          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center" :style="{backgroundImage: 'url(http://178.62.58.172' + carrousels[2].Imagen.url + ')'}">
             <div class="container mx-auto flex justify-center items-center md:block">
               <div class="flex flex-col w-10/12 text-center lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
                 <p class="font-brand text-3xl text-gray-200 mb-4">
-                  Brown Biscuit OffWhite
+                  {{ carrousels[2].Titulo }}
                 </p>
-                <a class="boton-carousel" href="#">Ver Sneaker</a>
+                <NuxtLink :to="{path:`/Catalogo/${carrousels[2].NumId}`}">
+                  <p class="boton-carousel">
+                    Ver Sneaker
+                  </p>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -90,31 +102,54 @@
 
       <section class="bg-white py-8 dark:bg-gray-800">
         <div class=" flex items-center flex-wrap pt-4 pb-12">
-          <nav id="store" class="w-full z-30 top-0 px-6 py-1">
-            <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
-              <a class=" font-brand text-2xl md:text-5xl tracking-widest text-gray-400" href="#">
-                CATÁLOGO
-              </a>
-              <div id="store-nav-content" class="flex items-center">
-                <a class="pl-3 inline-block no-underline hover:text-black dark:text-white dark:hover:text-green-500" href="#">
-                  <svg class="fill-current hover:text-black dark:hover:text-green-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" />
-                  </svg>
-                </a>
-
-                <a class="pl-3 inline-block no-underline hover:text-black dark:text-white dark:hover:text-green-500" href="#">
-                  <svg class="fill-current hover:text-black dark:hover:text-green-500 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" />
-                  </svg>
-                </a>
+          <nav id="BarraBusqueda" class="w-full z-30 top-0 px-6 py-1 ">
+            <div id="ContenedorBusqueda" class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3 focus-within:ring-2 focus-within:ring-gray-100 rounded">
+              <div class="flex items-center lg:justify-between lg:mx-6 w-full ">
+                <input v-model="query" type="text" placeholder="Buscar..." class="md:flex-grow w-1/2 md:w-2/3 outline-none font-brand text-2xl md:text-5xl tracking-widest text-gray-400 bg-transparent focus:text-green-500">
+                <div class="flex items-baseline justify-end w-1/2">
+                  <div class="pl-3 text-gray-400 inline-block no-underline hover:text-green-500 dark:text-white dark:hover:text-green-500">
+                    <button class="focus:outline-none" @click="limpiarBusqueda()">
+                      <svg class="fill-current md:w-8 w-6 hover:text-green-500 dark:hover:text-green-500 " viewBox="0 0 20 20">
+                        <path d="M10.185,1.417c-4.741,0-8.583,3.842-8.583,8.583c0,4.74,3.842,8.582,8.583,8.582S18.768,14.74,18.768,10C18.768,5.259,14.926,1.417,10.185,1.417 M10.185,17.68c-4.235,0-7.679-3.445-7.679-7.68c0-4.235,3.444-7.679,7.679-7.679S17.864,5.765,17.864,10C17.864,14.234,14.42,17.68,10.185,17.68 M10.824,10l2.842-2.844c0.178-0.176,0.178-0.46,0-0.637c-0.177-0.178-0.461-0.178-0.637,0l-2.844,2.841L7.341,6.52c-0.176-0.178-0.46-0.178-0.637,0c-0.178,0.176-0.178,0.461,0,0.637L9.546,10l-2.841,2.844c-0.178,0.176-0.178,0.461,0,0.637c0.178,0.178,0.459,0.178,0.637,0l2.844-2.841l2.844,2.841c0.178,0.178,0.459,0.178,0.637,0c0.178-0.176,0.178-0.461,0-0.637L10.824,10z" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div v-click-outside="esconder" class="relative">
+                    <div class="pl-3 text-gray-400 inline-block no-underline hover:text-green-500 dark:text-white dark:hover:text-green-500 ">
+                      <button type="button" class="focus:outline-none" @click="filtros = !filtros">
+                        <svg class="fill-current md:w-9 w-7 hover:text-green-500 dark:hover:text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" />
+                        </svg>
+                      </button>
+                    </div>
+                    <transition
+                      enter-active-class="transition ease-out duration-100 transform"
+                      enter-class="opacity-0 scale-95"
+                      enter-to-class="opacity-100 scale-100"
+                      leave-active-class="transition ease-in duration-75 transform"
+                      leave-class="opacity-100 scale-100"
+                      leave-to-class="opacity-0 scale-95"
+                    >
+                      <div v-show="filtros" class=" focus-within:ring-2 focus-within:ring-green-200 origin-top-right absolute right-0 mt-2 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
+                        <select id="1" v-model="query" name="Marcas" class="outline-none text-black">
+                          <option value="" disabled selected>
+                            Selecciona una marca
+                          </option>
+                          <option v-for="marca in marcas" :key="marca.id">
+                            {{ marca.Marca }}
+                          </option>
+                        </select>
+                      </div>
+                    </transition>
+                  </div>
+                </div>
               </div>
             </div>
-            <hr class="bg-green-600 container dark:bg-green-500 h-2 hidden md:block mx-auto">
           </nav>
 
-          <div v-for="snkrz in snkrzs" :key="snkrz.id" class="2xl:p-7 flex flex-col md:w-1/3 p-6 w-full xl:w-1/4">
+          <div v-for="snkrz in listaFiltrada" :key="snkrz.id" class="2xl:p-7 flex flex-col md:w-1/3 p-6 w-full xl:w-1/4">
             <NuxtLink :to="{name:'Catalogo-id', params: { id: snkrz.id }}">
-              <img class="2xl:w-full h-56 hover:grow hover:shadow-lg md:w-96 object-cover rounded-lg w-full" :src="'http://178.62.58.172' + snkrz.Imagen.url">
+              <img class="2xl:w-full h-56 hover:grow hover:shadow-lg md:w-96 object-cover md:object-contain lg:object-cover rounded-lg w-full" :src="'http://178.62.58.172' + snkrz.Imagen.url">
               <div class="pt-3 flex items-center justify-between">
                 <p class=" dark:text-gray-400 font-brand md:text-xl text-3xl text-gray-600">
                   {{ snkrz.Titulo }}
@@ -144,25 +179,63 @@
           </div>
         </div>
       </section>
+      <div v-if="listaFiltrada.length == 0" class="p-4">
+        <div class="p-4">
+          <h3 class="lg:text-5xl text-3xl text-green-600 font-brand text-center">
+            No hay resultados
+          </h3>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import vClickOutside from 'v-click-outside'
 import snkrzQuery from '~/apollo/queries/Catalogo/snkrzQuery'
-
+import marcaQuery from '~/apollo/queries/Catalogo/marcaQuery'
+import carrouselQuery from '~/apollo/queries/Catalogo/carrouselQuery'
 export default {
   name: 'Catalogo',
+  directives: {
+    clickOutside: vClickOutside.directive
+  },
   data () {
     return {
       snkrzs: [],
-      query: ''
+      query: '',
+      filtros: false,
+      marcas: [],
+      carrousels: []
     }
   },
   apollo: {
     snkrzs: {
       prefetch: true,
       query: snkrzQuery
+    },
+    marcas: {
+      prefetch: true,
+      query: marcaQuery
+    },
+    carrousels: {
+      prefetch: true,
+      query: carrouselQuery
+    }
+  },
+  computed: {
+    listaFiltrada () {
+      return this.snkrzs.filter((snkrz) => {
+        return snkrz.Titulo.toLowerCase().includes(this.query.toLowerCase()) || snkrz.Marca[0].Marca.toLowerCase().includes(this.query.toLowerCase())
+      })
+    }
+  },
+  methods: {
+    esconder () {
+      this.filtros = false
+    },
+    limpiarBusqueda () {
+      this.query = ''
     }
   }
 }
@@ -214,4 +287,66 @@ export default {
         #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
             color: #129156;
         }
+        /* Barra Busqueda */
+         @media (min-width:320px) and (max-width:370px) {
+          #BarraBusqueda {
+            position: sticky;
+            top:10vh
+          }
+          #ContenedorBusqueda{
+            background-color: #ffffffc7;
+            backdrop-filter: blur(7px);
+          }
+        }
+         @media (min-width:375px) and (max-width:500px) {
+          #BarraBusqueda {
+            position: sticky;
+            top:9.5vh
+          }
+          #ContenedorBusqueda{
+            background-color: #ffffffc7;
+            backdrop-filter: blur(7px);
+          }
+        }
+         @media (min-width:500px) and (max-width:1024px) {
+          #BarraBusqueda {
+            position: sticky;
+            top:11.5vh
+          }
+          #ContenedorBusqueda{
+            background-color: #ffffffc7;
+            backdrop-filter: blur(7px);
+          }
+        }
+        @media (min-width:1024px) and (max-width:1450px) {
+          #BarraBusqueda {
+            position: sticky;
+            top:16vh
+          }
+          #ContenedorBusqueda{
+            background-color: #ffffffc7;
+            backdrop-filter: blur(7px);
+          }
+        }
+        @media (min-width:1450px) and (max-width:1900px) {
+          #BarraBusqueda {
+            position: sticky;
+            top:14.5vh
+          }
+          #ContenedorBusqueda{
+            background-color: #ffffffc7;
+            backdrop-filter: blur(7px);
+          }
+        }
+         @media (min-width:1900px) and (max-width:2600px) {
+          #BarraBusqueda {
+            position: sticky;
+            top:10vh
+          }
+          #ContenedorBusqueda{
+            background-color: #ffffffc7;
+            backdrop-filter: blur(7px);
+          }
+        }
+
 </style>

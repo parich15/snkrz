@@ -2,7 +2,7 @@
   <a to="#">
     <div class="flex flex-col xl:p-12">
       <div class="flex px-2">
-        <img class=" rounded-lg" :src="enlace" alt="">
+        <img class=" rounded-lg object-cover w-full h-20 md:h-32 lg:h-auto" :src="enlace" alt="">
       </div>
       <div>
         <h3 class=" text-center font-brand text-base text-gray-700 my-3 lg:mt-3 lg:text-2xl dark:text-gray-400">
